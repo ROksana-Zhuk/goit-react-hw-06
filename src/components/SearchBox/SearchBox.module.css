@@ -1,0 +1,22 @@
+.box {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    color: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 6px;
+}
+.input {
+    border: 1px solid #858585;
+    border-radius: 20px;
+    text-align: left;
+    background-color: transparent;
+    outline: transparent;
+    padding: 10px;
+    color: #141414;
+}

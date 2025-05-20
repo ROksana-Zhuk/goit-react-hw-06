@@ -1,0 +1,48 @@
+.box {
+    display: flex;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 10px 24px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    color: #000;
+    gap: 24px;
+    width: calc((1060px - 170px) / 3);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+.button {
+    border-radius: 30px;
+    background-color: #7A3145;
+    color:  #FBFBFB;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.button:hover {
+    background-color: brown;
+    color: #bbb;
+    transition-property: background-color, color, transform;
+}
+
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+
+
+}
