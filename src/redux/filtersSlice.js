@@ -1,26 +1,27 @@
-import { createAction } from "@reduxjs/toolkit";
+
+import { createSlice } from "@reduxjs/toolkit";
 
 
-export const changeFilter = createAction("filters/changeFilter");
+const slice = createSlice({
+    name: "filters",
+    initialState: {
+        name: "",
+    },
+    reducers: {
+        changeFilter(state, action) {
+          return {
+          ...state,
+          name: action.payload,
+        };
+      },
+    },
+  });
 
 
-const initialState = {
-  name: "",
-};
 
 
-export default function filtersReducer(state = initialState, action) {
-  console.log("filtersReducer", action);
+// Експортуємо фабрики екшенів
+export const { changeFilter } = slice.actions;
 
-  switch (action.type) {
-    case "filters/changeFilter":
-      return {
-        ...state,
-        name: action.payload,
-      };
-
-
-    default:
-      return state;
-  }
-}
+// Експортуємо редюсер слайсу
+export default slice.reducer;
